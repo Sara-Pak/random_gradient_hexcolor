@@ -1,0 +1,148 @@
+/*stylesheet for random_hexcolor*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+
+    .container{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    #hex-colors{
+      width: 100%;
+      text-align: center;
+    }
+    
+    #hex-colors h1, h2{
+      font-size: 2rem;
+      text-transform: uppercase;
+      -ms-animation: colorchange 5s infinite alternate;
+      -moz-animation: colorchange 5s infinite alternate;
+      -o-animation: colorchange 5s infinite alternate; 
+      animation: colorchange 5s infinite alternate; 
+    }
+    
+    #hex-colors h2{
+      margin-top: 15%;
+      text-transform: lowercase;
+    }
+    
+    /* animation */
+    @-ms-keyframes colorchange{
+      0% {
+            color: indigo;
+          }
+          
+          20% {
+            color: pink;
+          }
+          
+          40% {
+            color: orange;
+          }
+          
+          60% {
+            color: purple;
+          }
+          
+          80% {
+            color: green;
+          }
+          
+          100% {
+            color: yellow;
+          } 
+    }
+    
+    @-moz-keyframes colorchange{
+        0% {
+            color: indigo;
+          }
+          
+          20% {
+            color: pink;
+          }
+          
+          40% {
+            color: orange;
+          }
+          
+          60% {
+            color: purple;
+          }
+          
+          80% {
+            color: green;
+          }
+          
+          100% {
+            color: yellow;
+          } 
+    }
+    
+    @-o-keyframes colorchange{
+        0% {
+            color: indigo;
+          }
+          
+          20% {
+            color: pink;
+          }
+          
+          40% {
+            color: orange;
+          }
+          
+          60% {
+            color: purple;
+          }
+          
+          80% {
+            color: green;
+          }
+          
+          100% {
+            color: yellow;
+          } 
+    }
+    
+    @keyframes colorchange {
+        0% {
+            color: indigo;
+          }
+          
+          20% {
+            color: pink;
+          }
+          
+          40% {
+            color: orange;
+          }
+          
+          60% {
+            color: purple;
+          }
+          
+          80% {
+            color: green;
+          }
+          
+          100% {
+            color: yellow;
+          } 
+    }
+    
+    /* set responsiveness parameters */
+    @media(max-width:480px){
+      #hex-colors h1{font-size: 1.5rem;}
+      
+      #hex-colors h2{font-size: 1.5rem;}
+    }
+
+}
